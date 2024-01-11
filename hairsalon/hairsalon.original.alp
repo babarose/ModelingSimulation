@@ -153,23 +153,41 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1705002581918</Id>
-					<Name><![CDATA[inSystemAppointmentCustomer]]></Name>
-					<X>120</X><Y>-410</Y>
+			</Variables>
+			<Connectors>
+				<Connector>
+					<Id>1704911948150</Id>
+					<Name><![CDATA[connector5]]></Name>
+					<X>550</X><Y>-230</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[int]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-			</Variables>
-			<Connectors>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[hairsalon]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectOutput]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out1]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[hairsalon]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedService]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedService]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>140</X><Y>-50</Y></Point>
+					</Points>
+				</Connector>
 				<Connector>
 					<Id>1704912036227</Id>
 					<Name><![CDATA[connector6]]></Name>
@@ -369,9 +387,9 @@
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1704999306862</Id>
-					<Name><![CDATA[connector4]]></Name>
-					<X>70</X><Y>-180</Y>
+					<Id>1704997819911</Id>
+					<Name><![CDATA[connector12]]></Name>
+					<X>80</X><Y>-160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -379,7 +397,7 @@
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[hairsalon]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[CustomerpedSource1]]></ItemName>
+						<ItemName><![CDATA[ACustomerpedSource]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
@@ -398,13 +416,13 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>80</X><Y>-60</Y></Point>
+						<Point><X>70</X><Y>-80</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1704911948150</Id>
-					<Name><![CDATA[connector5]]></Name>
-					<X>550</X><Y>-230</Y>
+					<Id>1704998026384</Id>
+					<Name><![CDATA[connector1]]></Name>
+					<X>340</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -412,65 +430,32 @@
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[hairsalon]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedSelectOutput]]></ItemName>
+						<ItemName><![CDATA[queue]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
-						<ItemName><![CDATA[out1]]></ItemName>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[hairsalon]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedService]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-						<ClassName><![CDATA[PedService]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>140</X><Y>-50</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1705005011869</Id>
-					<Name><![CDATA[connector1]]></Name>
-					<X>190</X><Y>-240</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[hairsalon]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
 						<ItemName><![CDATA[pedGoToReceptionist]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
 						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
 						<ClassName><![CDATA[PedGoTo]]></ClassName>
 						<ItemName><![CDATA[out]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[hairsalon]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedWait]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-						<ClassName><![CDATA[PedWait]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>110</X><Y>10</Y></Point>
+						<Point><X>-150</X><Y>0</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
-					<Id>1705005013448</Id>
+					<Id>1704998035530</Id>
 					<Name><![CDATA[connector2]]></Name>
-					<X>340</X><Y>-230</Y>
+					<X>380</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -478,11 +463,11 @@
 					<SourceEmbeddedObjectReference>
 						<PackageName><![CDATA[hairsalon]]></PackageName>
 						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedWait]]></ItemName>
+						<ItemName><![CDATA[queue]]></ItemName>
 					</SourceEmbeddedObjectReference>
 					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-						<ClassName><![CDATA[PedWait]]></ClassName>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
 						<ItemName><![CDATA[out]]></ItemName>
 					</SourceConnectableItemReference>
 					<TargetEmbeddedObjectReference>
@@ -497,121 +482,11 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>190</X><Y>0</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1705005101109</Id>
-					<Name><![CDATA[connector3]]></Name>
-					<X>550</X><Y>-150</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[hairsalon]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedSelectOutput]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
-						<ItemName><![CDATA[out5]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[hairsalon]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[pedWait]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-						<ClassName><![CDATA[PedWait]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-250</X><Y>-80</Y></Point>
+						<Point><X>140</X><Y>10</Y></Point>
+						<Point><X>150</X><Y>10</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
-			<Functions>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>VOID</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1704999669208</Id>
-					<Name><![CDATA[waitOtherCustomers]]></Name>
-					<X>120</X><Y>-370</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[Set<Agent> customers = pedWait.getPeds();
-
-if (inSystemAppointmentCustomer == 0) {
-    pedWait.freeAll();
-} else {
-    for (Agent ac : customers) {
-        if (ac instanceof Appointment_Customer) {
-            Appointment_Customer appointmentCustomer = (Appointment_Customer) ac;
-            if (appointmentCustomer.Priority == 10) {
-                pedWait.free(ac);
-            }
-        }
-    }
-}]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>VOID</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1705002895054</Id>
-					<Name><![CDATA[decreaseAppointmentCustomers]]></Name>
-					<X>680</X><Y>-430</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[Set<Agent> customers = pedService.getPeds();
-for (Agent customer: customers) {
-	if(customer instanceof Appointment_Customer) {
-		inSystemAppointmentCustomer--;
-	}
-}]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>VOID</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1705003117672</Id>
-					<Name><![CDATA[decreaseAppointmentCustomers1]]></Name>
-					<X>680</X><Y>-410</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[Set<Agent> customers = pedService1.getPeds();
-for (Agent customer: customers) {
-	if(customer instanceof Appointment_Customer) {
-		inSystemAppointmentCustomer--;
-	}
-}]]></Body>
-				</Function>
-				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>VOID</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
-					<Id>1705003136888</Id>
-					<Name><![CDATA[decreaseAppointmentCustomers2]]></Name>
-					<X>680</X><Y>-390</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[Set<Agent> customers = pedService2.getPeds();
-for (Agent customer: customers) {
-	if(customer instanceof Appointment_Customer) {
-		inSystemAppointmentCustomer--;
-	}
-}]]></Body>
-				</Function>
-			</Functions>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1704903771028</Id>
@@ -1021,9 +896,6 @@ for (Agent customer: customers) {
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[exitNumber]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[servicearea()]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
@@ -1135,14 +1007,11 @@ for (Agent customer: customers) {
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[servicearea1isAvailable = false;]]></Code>
+								<Code><![CDATA[servicearea1isAvailable = false]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[decreaseAppointmentCustomers();]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onAtExitQueue]]></Name>
@@ -1156,8 +1025,7 @@ for (Agent customer: customers) {
 						<Parameter>
 							<Name><![CDATA[onEndService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[servicearea1isAvailable = true;
-]]></Code>
+								<Code><![CDATA[servicearea1isAvailable = true]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1263,9 +1131,6 @@ for (Agent customer: customers) {
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[decreaseAppointmentCustomers1();]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onAtExitQueue]]></Name>
@@ -1279,8 +1144,7 @@ for (Agent customer: customers) {
 						<Parameter>
 							<Name><![CDATA[onEndService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[servicearea2isAvailable = true;
-]]></Code>
+								<Code><![CDATA[servicearea2isAvailable = true]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1386,9 +1250,6 @@ for (Agent customer: customers) {
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnterQueue]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[decreaseAppointmentCustomers2();]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onAtExitQueue]]></Name>
@@ -1402,7 +1263,7 @@ for (Agent customer: customers) {
 						<Parameter>
 							<Name><![CDATA[onEndService]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[servicearea3isAvailable = true;]]></Code>
+								<Code><![CDATA[servicearea3isAvailable = true]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1515,9 +1376,9 @@ for (Agent customer: customers) {
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1704999304237</Id>
-					<Name><![CDATA[CustomerpedSource1]]></Name>
-					<X>40</X><Y>-180</Y>
+					<Id>1704997778774</Id>
+					<Name><![CDATA[ACustomerpedSource]]></Name>
+					<X>50</X><Y>-160</Y>
 					<Label><X>-25</X><Y>-35</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1561,8 +1422,8 @@ for (Agent customer: customers) {
 						<Parameter>
 							<Name><![CDATA[rate]]></Name>
 							<Value Class="CodeUnitValue">
-								<Code><![CDATA[uniform_discr(5,8)]]></Code>
-								<Unit Class="RateUnits"><![CDATA[PER_HOUR]]></Unit>
+								<Code><![CDATA[uniform_discr(1,2)]]></Code>
+								<Unit Class="RateUnits"><![CDATA[PER_MINUTE]]></Unit>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1603,9 +1464,6 @@ for (Agent customer: customers) {
 										</GenericParameterSubstituteReference>
 									</GenericParameterSubstitute>
 									<Parameters>
-										<Parameter>
-											<Name><![CDATA[Priority]]></Name>
-										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
 									<Replication Class="CodeValue">
@@ -1683,9 +1541,6 @@ for (Agent customer: customers) {
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onExit]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[inSystemAppointmentCustomer++;]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onBeginGrouping]]></Name>
@@ -1734,81 +1589,72 @@ for (Agent customer: customers) {
 					</QuantityColumn>
 				</EmbeddedObject>
 				<EmbeddedObject>
-					<Id>1705005009066</Id>
-					<Name><![CDATA[pedWait]]></Name>
-					<X>300</X><Y>-240</Y>
-					<Label><X>-15</X><Y>-25</Y></Label>
+					<Id>1704998023749</Id>
+					<Name><![CDATA[queue]]></Name>
+					<X>340</X><Y>-260</Y>
+					<Label><X>-5</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<ActiveObjectClass>
-						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-						<ClassName><![CDATA[PedWait]]></ClassName>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Queue]]></ClassName>
 					</ActiveObjectClass>
 					<GenericParameterSubstitute>
 						<GenericParameterSubstituteReference>
-							<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
-							<ClassName><![CDATA[PedWait]]></ClassName>
-							<ItemName><![CDATA[1412464601107]]></ItemName>
+							<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+							<ClassName><![CDATA[Queue]]></ClassName>
+							<ItemName><![CDATA[1412336242932]]></ItemName>
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
 					<Parameters>
 						<Parameter>
-							<Name><![CDATA[locationType]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[locationNode]]></Name>
+							<Name><![CDATA[capacity]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[waitingroom]]></Code>
+								<Code><![CDATA[30]]></Code>
 							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[attractorChoice]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[attractor]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[locationLine]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[locationX]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[locationY]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[delayType]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[self.DELAY_MANUAL]]></Code>
-							</Value>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[delayTimeout]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[waitForGroup]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[delayStartsWhen]]></Name>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[maximumCapacity]]></Name>
 						</Parameter>
 						<Parameter>
-							<Name><![CDATA[capacity]]></Name>
+							<Name><![CDATA[entityLocation]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[waitingroom]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
-							<Name><![CDATA[targetReachTolerance]]></Name>
+							<Name><![CDATA[queuing]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.QUEUING_PRIORITY]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[priority]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[Appointment_Customer.Priority]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[comparison]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enableTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[timeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[enablePreemption]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[restoreEntityLocationOnExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[forceStatisticsCollection]]></Name>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
-						</Parameter>
-						<Parameter>
-							<Name><![CDATA[onBeginWait]]></Name>
-							<Value Class="CodeValue">
-								<Code><![CDATA[waitOtherCustomers();]]></Code>
-							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onAtExit]]></Name>
@@ -1817,7 +1663,10 @@ for (Agent customer: customers) {
 							<Name><![CDATA[onExit]]></Name>
 						</Parameter>
 						<Parameter>
-							<Name><![CDATA[onCancel]]></Name>
+							<Name><![CDATA[onExitTimeout]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExitPreempted]]></Name>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onRemove]]></Name>
@@ -2491,7 +2340,7 @@ for (Agent customer: customers) {
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+					<Properties SaveInSnapshot="true" ModificatorType="ACTION">
 						<Type><![CDATA[int]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
@@ -2840,7 +2689,7 @@ for (Agent customer: customers) {
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+					<Properties SaveInSnapshot="true" ModificatorType="ACTION">
 						<Type><![CDATA[int]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
@@ -2849,7 +2698,6 @@ for (Agent customer: customers) {
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1704998332729</Id>
-							<Label><![CDATA[Priority]]></Label>
 							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>

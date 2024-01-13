@@ -1538,6 +1538,39 @@
 						<Point><X>130</X><Y>-70</Y></Point>
 					</Points>
 				</Connector>
+				<Connector>
+					<Id>1705175825053</Id>
+					<Name><![CDATA[connector37]]></Name>
+					<X>1370</X><Y>-330</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[hairsalon]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSelectOutput]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSelectOutput]]></ClassName>
+						<ItemName><![CDATA[out5]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[hairsalon]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[pedSink2]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.pedestrian]]></PackageName>
+						<ClassName><![CDATA[PedSink]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>0</X><Y>0</Y></Point>
+						<Point><X>-50</X><Y>50</Y></Point>
+					</Points>
+				</Connector>
 			</Connectors>
 			<Events>
 				<Event>
@@ -1606,7 +1639,7 @@ int rand = (int) normal(1, 5, 2, 1);
 for(int i = 0; i < rand; i++) {
 CustomerpedSource.inject();
 }
-for(int i = 0; i < rand/2; i++) {
+for(int i = 0; i < rand/4; i++) {
 CustomerpedSource1.inject();
 }
 
@@ -1616,7 +1649,7 @@ int rand = (int)normal(4, 11, 6, 2);
 for(int i = 0; i < rand; i++) {
 CustomerpedSource.inject();
 }
-for(int i = 0; i < rand/2; i++) {
+for(int i = 0; i < rand/4; i++) {
 CustomerpedSource1.inject();
 }
 }
@@ -1626,7 +1659,7 @@ int rand = (int)normal(1, 6, 2, 1);
 for(int i = 0; i < rand; i++) {
 CustomerpedSource.inject();
 }
-for(int i = 0; i < rand/2; i++) {
+for(int i = 0; i < rand/4; i++) {
 CustomerpedSource1.inject();
 }
 }
@@ -5742,14 +5775,14 @@ showView(V2D);]]></OnClickCode>
 						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>260</Width>
+					<Width>270</Width>
 					<Height>210</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>180</Width>
+						<Width>190</Width>
 						<Height>120</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
@@ -5788,7 +5821,7 @@ showView(V2D);]]></OnClickCode>
     			<Histogram>
 					<Id>1705170458006</Id>
 					<Name><![CDATA[AppointmentCustomerInSystemTime]]></Name>
-					<X>2600</X><Y>180</Y>
+					<X>2670</X><Y>180</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -9861,7 +9894,7 @@ showView(V2D);]]></OnClickCode>
 			<MaximumMemory>512</MaximumMemory>
 			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
-			<SeedValue>1</SeedValue>
+			<SeedValue>111</SeedValue>
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
 			<VmArgs><![CDATA[]]></VmArgs>
 			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
